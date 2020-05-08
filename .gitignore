@@ -26,3 +26,6 @@ times.html
 
 npm-debug.log
 package-lock.json
+
+jscrambler.json
+.jscramblerrc
