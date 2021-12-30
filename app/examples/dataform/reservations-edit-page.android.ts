@@ -1,12 +1,10 @@
 import { ReservationsViewModel } from "./reservations-view-model";
-import { EventData } from "tns-core-modules/data/observable";
-import { Page, NavigatedData } from "tns-core-modules/ui/page";
-import * as viewModule from "tns-core-modules/ui/core/view";
+import { EventData, NavigatedData, Page, Color } from '@nativescript/core';
+import * as viewModule from '@nativescript/core/ui/core/view';
 import * as navigator from "../../common/navigator";
 import * as dataFormModule from "nativescript-ui-dataform";
-import { Color } from "tns-core-modules/color";
-import * as platform from "tns-core-modules/platform";
-import * as utils from "tns-core-modules/utils/utils";
+import * as platform from '@nativescript/core/platform';
+import * as utils from "@nativescript/core/utils";
 
 var colorAccent: Color = new Color("#BF3136");
 var model: ReservationsViewModel;
@@ -14,8 +12,7 @@ var imageWidth: number;
 var scale;
 
 export function pageNavigatedTo(args: NavigatedData) {
-    var screen = platform.screen;
-    scale = screen.mainScreen.scale;
+    scale = platform.Screen.mainScreen.scale;
     imageWidth = 56 * scale;
 
     var page = <Page>args.object;

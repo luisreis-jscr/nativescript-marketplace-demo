@@ -1,4 +1,5 @@
-import * as observable from "tns-core-modules/data/observable";
+import * as observable from '@nativescript/core/data/observable';
+
 function formatTime(time: Date) {
     var hour: number = time.getHours();
     var min: string = time.getMinutes() + "";

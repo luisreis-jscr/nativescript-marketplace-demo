@@ -1,12 +1,12 @@
-import * as application from "tns-core-modules/application";
-import * as imageModule from 'nativescript-image';
+import * as application from '@nativescript/core/application';
+import * as imageModule from '@nativescript-community/ui-image';
 // import * as frame from "tns-core-modules/ui/frame";
 // import * as exampleBase from "./examples/example-base-page";
 // import * as prof from "./common/profiling";
 // import * as trace from "trace";
-import * as utils from "tns-core-modules/utils/utils";
+import * as utils from "@nativescript/core/utils";
 // import { time, uptime } from "profiling";
-import "nativescript-plugin-firebase";
+import "@nativescript/firebase";
 import { init as initFirebase } from "./common/firebase";
 // import { init as initAppSync } from "./common/app-sync";
 

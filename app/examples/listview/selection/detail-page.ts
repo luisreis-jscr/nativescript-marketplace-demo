@@ -1,7 +1,5 @@
 import { BlogPostItemData } from "./selection-view-model";
-import { EventData } from "tns-core-modules/data/observable";
-import { Page, NavigatedData } from "tns-core-modules/ui/page";
-import { View } from "tns-core-modules/ui/core/view";
+import { EventData, NavigatedData, Page, View } from '@nativescript/core';
 import * as navigator from "../../../common/navigator";
 
 export function pageNavigatedTo(args: NavigatedData) {

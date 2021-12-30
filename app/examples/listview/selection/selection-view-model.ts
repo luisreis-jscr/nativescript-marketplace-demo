@@ -1,10 +1,7 @@
-import { Observable } from "tns-core-modules/data/observable";
-import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { Observable, ObservableArray, Frame, View } from '@nativescript/core';
 import { RadListView, ListViewEventData, ListViewSelectionBehavior, SwipeActionsEventData } from "nativescript-ui-listview";
-import { topmost as topmostFrame } from "tns-core-modules/ui/frame";
-import { View } from 'tns-core-modules/ui/core/view';
-import * as utils from "tns-core-modules/utils/utils";
-import * as platform from "tns-core-modules/platform";
+import * as utils from "@nativescript/core/utils";
+import * as platform from '@nativescript/core/platform';
 
 var DELTA = 0.1;
 
@@ -212,7 +209,7 @@ export class SelectionViewModel extends Observable {
         }
         this.CurrentItem = (<any>this._owner.items).getItem(args.index);
         this._currentItemIndex = args.index;
-        topmostFrame().navigate({
+        Frame.topmost().navigate({
             moduleName: "examples/listview/selection/detail-page",
             animated: true,
             context: this.CurrentItem

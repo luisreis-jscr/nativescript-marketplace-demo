@@ -1,17 +1,13 @@
-import { EventData } from "tns-core-modules/data/observable";
-import { Page } from "tns-core-modules/ui/page";
+import { EventData, Page, View, isIOS, Application } from '@nativescript/core';
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
-import { LayoutBase } from "tns-core-modules/ui/layouts/layout-base";
-import * as gestures from "tns-core-modules/ui/gestures";
+import { LayoutBase } from "@nativescript/core";
+import * as gestures from '@nativescript/core/ui/gestures';
 import * as examplesVM from "../../view-models/examples-model"
 import * as mainPageVM from "../../view-models/main-page-view-model";
 import * as navigator from "../../common/navigator";
 import * as prof from "../../common/profiling";
-import { View } from "tns-core-modules/ui/core/view";
 import { grayTouch } from "../../common/effects";
 import { onAfterIntro } from "../../common/firebase";
-import { isIOS } from "tns-core-modules/platform";
-import { getRootView } from "tns-core-modules/application"
 
 export function onLoaded(args) {
     prof.stop("main-page");
@@ -104,7 +100,7 @@ export function enter(args) {
 }
 
 function getRootSideDrawer(): RadSideDrawer {
-    return getRootView() as RadSideDrawer;
+    return Application.getRootView() as RadSideDrawer;
 }
 
 function startEnterAnimation(page: Page) {

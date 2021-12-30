@@ -1,6 +1,8 @@
 import * as examplesVM from "./examples-model";
-import * as observable from "tns-core-modules/data/observable";
-import * as platform from "tns-core-modules/platform";
+import * as observable from '@nativescript/core/data/observable';
+
+import * as platform from '@nativescript/core/platform';
+
 import { viewModel } from "../common/firebase";
 
 export class MainPageViewModel extends observable.Observable {
@@ -23,7 +25,7 @@ export class MainPageViewModel extends observable.Observable {
 		this.set("selectedScreen", 0);
 		this.set("useListLayout", false);
 
-		this.set("screenWidth", platform.screen.mainScreen.widthDIPs)
+		this.set("screenWidth", platform.Screen.mainScreen.widthDIPs)
 	}
 
     public toggleShowNew() {
@@ -36,7 +38,7 @@ export class MainPageViewModel extends observable.Observable {
     }
 
     get screenWidth(): number {
-		return platform.screen.mainScreen.widthDIPs;
+		return platform.Screen.mainScreen.widthDIPs;
 	}
 }
 

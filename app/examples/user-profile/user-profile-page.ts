@@ -1,11 +1,7 @@
-import { EventData } from "tns-core-modules/data/observable";
-import * as observable from "tns-core-modules/data/observable";
-import { Page } from "tns-core-modules/ui/page";
-import { View } from "tns-core-modules/ui/core/view";
-import { EditableTextBase } from "tns-core-modules/ui/editable-text-base";
-import { Color } from "tns-core-modules/color";
-import * as platform from "tns-core-modules/platform";
-import * as application from "tns-core-modules/application"
+import { EventData, View, EditableTextBase, Color, Page } from '@nativescript/core';
+import * as observable from '@nativescript/core/data/observable';
+import * as platform from '@nativescript/core/platform';
+import * as application from '@nativescript/core/application';
 import * as navigator from "../../common/navigator";
 import * as linearGradient from "../../common/linear-gradient";
 

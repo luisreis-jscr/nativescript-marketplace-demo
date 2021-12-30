@@ -1,6 +1,8 @@
 import * as examplesVM from "./examples-model";
-import * as observable from "tns-core-modules/data/observable";
-import * as platform from "tns-core-modules/platform";
+import * as observable from '@nativescript/core/data/observable';
+
+import * as platform from '@nativescript/core/platform';
+
 
 export class GroupPageViewModel extends observable.Observable {
     public group: examplesVM.ExampleGroup;
@@ -23,7 +25,7 @@ export class GroupPageViewModel extends observable.Observable {
     }
 
     get screenWidth(): number {
-        return platform.screen.mainScreen.widthDIPs;
+        return platform.Screen.mainScreen.widthDIPs;
     }
 }
 

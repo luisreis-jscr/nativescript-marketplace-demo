@@ -1,10 +1,10 @@
-import * as observable from "tns-core-modules/data/observable";
-import * as gridModule from "tns-core-modules/ui/layouts/grid-layout";
-import * as utils from "tns-core-modules/utils/utils";
+import * as observable from '@nativescript/core/data/observable';
+import * as gridModule from '@nativescript/core/ui/layouts/grid-layout';
+import * as utils from "@nativescript/core/utils";
 import * as models from "./view-model";
-import * as frame from "tns-core-modules/ui/frame";
-import * as pages from "tns-core-modules/ui/page";
-import * as gestures from "tns-core-modules/ui/gestures";
+import * as frame from '@nativescript/core/ui/frame';
+import * as pages from '@nativescript/core/ui/page';
+import * as gestures from '@nativescript/core/ui/gestures';
 import * as navigator from "../../common/navigator";
 
 export function rootGridLoaded(args: observable.EventData) {

@@ -1,5 +1,6 @@
-import { Page, NavigatedData, EventData, View } from "tns-core-modules/ui/page";
-import * as dialogs from "tns-core-modules/ui/dialogs";
+import { NavigatedData, Page, EventData, View } from '@nativescript/core';
+import * as dialogs from '@nativescript/core/ui/dialogs';
+
 import { CodePageViewModel } from "../view-models/code-page-view-model"
 import * as navigator from "../common/navigator";
 

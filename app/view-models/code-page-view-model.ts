@@ -1,6 +1,7 @@
 /// <reference path="../typings/highlightjs.d.ts" />
-import { Observable } from "tns-core-modules/data/observable";
-import * as fs from "tns-core-modules/file-system";
+import { Observable } from '@nativescript/core';
+import * as fs from '@nativescript/core/file-system';
+
 import { Example, ExampleGroup } from "./examples-model";
 import * as hljs from "highlight.js/lib/index";
 

@@ -2,7 +2,7 @@
         xmlns="http://www.nativescript.org/tns.xsd"
         xmlns:lv="nativescript-ui-listview"
         xmlns:examples="examples/example-base-page"
-        xmlns:img="nativescript-image"
+        xmlns:img="@nativescript-community/ui-image"
         navigatingTo="pageNavigatingTo">
     <Page.actionBar>
         <ActionBar title="Item layouts" automationText="ActionBar">

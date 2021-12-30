@@ -1,8 +1,9 @@
 import * as examplesVM from "../view-models/examples-model";
 import * as exampleInfoPageVM from "../view-models/example-info-page-view-model";
-import * as frameModule from "tns-core-modules/ui/frame";
-import { isIOS, isAndroid } from "tns-core-modules/platform";
-import { getRootView } from "tns-core-modules/application"
+import * as frameModule from '@nativescript/core/ui/frame';
+
+import { isIOS, isAndroid, Application } from '@nativescript/core';
+
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 
 function traceNavigateTo(to: string, context?: string): string {
@@ -14,7 +15,7 @@ function getFrameForNavigation(): frameModule.Frame {
 }
 
 function getRootSideDrawer(): RadSideDrawer {
-    return getRootView() as RadSideDrawer;
+    return Application.getRootView() as RadSideDrawer;
 }
 
 export function navigateToExample(example: examplesVM.Example, siblings: examplesVM.Example[]) {
@@ -110,7 +111,7 @@ export function openLink(view: any) {
     var url = view.tag;
     if (url) {
         if (isIOS) {
-            var nsUrl = NSURL.URLWithString(url);
+            var nsUrl = nsUrl.URLWithString(url);
             var sharedApp = UIApplication.sharedApplication;
             if (sharedApp.canOpenURL(nsUrl)) {
                 sharedApp.openURL(nsUrl);

@@ -1,9 +1,8 @@
 
-import * as bindable from "tns-core-modules/ui/core/bindable";
-import * as observable from "tns-core-modules/data/observable";
-import * as builder from "tns-core-modules/ui/builder";
-import * as app from "tns-core-modules/application";
-import * as utils from "tns-core-modules/utils/utils";
+import * as observable from '@nativescript/core/data/observable';
+import * as builder from '@nativescript/core/ui/builder';
+import * as app from '@nativescript/core/application';
+import * as utils from "@nativescript/core/utils";
 
 
 export class ChartExamplesDataModel {

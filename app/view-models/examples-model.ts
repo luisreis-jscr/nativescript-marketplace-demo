@@ -1,4 +1,4 @@
-import * as applicationModule from "tns-core-modules/application";
+import * as applicationModule from '@nativescript/core/application';
 
 export interface Example {
     title: string;

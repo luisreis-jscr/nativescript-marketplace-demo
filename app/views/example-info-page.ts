@@ -1,6 +1,9 @@
-import * as pages from "tns-core-modules/ui/page";
-import * as view from "tns-core-modules/ui/core/view";
-import * as observable from "tns-core-modules/data/observable";
+import * as pages from '@nativescript/core/ui/page';
+
+import * as view from '@nativescript/core/ui/core/view';
+
+import * as observable from '@nativescript/core/data/observable';
+
 import * as navigator from "../common/navigator";
 import * as examplePageVM from "../view-models/example-info-page-view-model"
 

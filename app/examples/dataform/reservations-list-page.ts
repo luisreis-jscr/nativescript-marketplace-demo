@@ -1,8 +1,7 @@
 import * as model from "./reservations-view-model";
 import * as navigator from "../../common/navigator";
 import { RadListView, ListViewEventData } from "nativescript-ui-listview";
-import { topmost as topmostFrame } from "tns-core-modules/ui/frame";
-import { getViewById } from "tns-core-modules/ui/core/view";
+import { Frame, getViewById } from '@nativescript/core';
 
 let viewModel;
 
@@ -43,7 +42,7 @@ export function onImageTap(args) {
 export function navigateToEditPage(item: model.Reservation, isNew: Boolean) {
     viewModel.currentReservation = item;
     viewModel.isNew = isNew;
-    topmostFrame().navigate({
+    Frame.topmost().navigate({
         moduleName: "examples/dataform/reservations-edit-page",
         animated: true,
         context: viewModel

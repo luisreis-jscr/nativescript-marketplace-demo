@@ -1,6 +1,4 @@
-import { TouchGestureEventData } from "tns-core-modules/ui/gestures";
-import { View } from "tns-core-modules/ui/core/view";
-import { Color } from "tns-core-modules/color";
+import { TouchGestureEventData, View, Color } from '@nativescript/core';
 
 export function loadedGuard<CB extends Function>(args: View, cb: CB): CB {
     return <any> function() {

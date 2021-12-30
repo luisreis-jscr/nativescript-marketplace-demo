@@ -1,8 +1,9 @@
-import { Page, Observable, ViewBase } from "tns-core-modules/ui/page";
+import { Page, ViewBase, View } from '@nativescript/core';
 // import { isAndroid } from "tns-core-modules/platform";
 import * as prof from "../common/profiling";
-import * as builder from "tns-core-modules/ui/builder";
-import { View } from "tns-core-modules/ui/core/view"
+import * as builder from '@nativescript/core/ui/builder';
+
+
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 
 export class ExamplePage extends Page {

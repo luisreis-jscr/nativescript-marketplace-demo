@@ -1,11 +1,10 @@
 import * as navigator from "./common/navigator"
-import * as gestures from "tns-core-modules/ui/gestures";
+import * as gestures from '@nativescript/core/ui/gestures';
 import { groups } from "./view-models/examples-model"
 import * as firebase from "./common/firebase";
 import { grayTouch } from "./common/effects";
-import * as application from "tns-core-modules/application";
-import { Observable } from "tns-core-modules/data/observable";
-import { getRootView } from "tns-core-modules/application"
+import * as application from '@nativescript/core/application';
+import { Observable, Application } from '@nativescript/core';
 
 class SidedrawerViewModel extends Observable {
     public groups = groups;
@@ -21,7 +20,7 @@ export function tileTouch(args: gestures.TouchGestureEventData) {
 }
 
 function sideDrawer(): any {
-    return getRootView();
+    return Application.getRootView();
 }
 
 function closeDrawer() {

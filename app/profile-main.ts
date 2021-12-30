@@ -1,6 +1,6 @@
-import * as pages from "tns-core-modules/ui/page";
-import * as frame from "tns-core-modules/ui/frame";
-import * as button from "tns-core-modules/ui/button";
+import * as pages from '@nativescript/core/ui/page';
+import * as frame from '@nativescript/core/ui/frame';
+import * as button from '@nativescript/core/ui/button';
 import * as prof from "./common/profiling";
 export function createPage() {
     var page = new pages.Page();

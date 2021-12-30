@@ -1,11 +1,9 @@
-import * as observable from "tns-core-modules/data/observable";
-import * as gridModule from "tns-core-modules/ui/layouts/grid-layout";
-import * as utils from "tns-core-modules/utils/utils";
-import { Page } from "tns-core-modules/ui/page";
-import { Color } from "tns-core-modules/color";
+import * as observable from '@nativescript/core/data/observable';
+import * as gridModule from '@nativescript/core/ui/layouts/grid-layout';
+import * as utils from "@nativescript/core/utils";
+import { Page, View } from '@nativescript/core';
 import * as navigator from "../../common/navigator";
-import { View } from "tns-core-modules/ui/core/view";
-import * as tabViewModule from "tns-core-modules/ui/tab-view";
+import * as tabViewModule from '@nativescript/core/ui/tab-view';
 
 let page: Page;
 

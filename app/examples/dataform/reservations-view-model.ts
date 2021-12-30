@@ -1,6 +1,5 @@
-import { Observable } from "tns-core-modules/data/observable";
-import { ObservableArray } from "tns-core-modules/data/observable-array";
-import * as appModule from "tns-core-modules/application";
+import { Observable, ObservableArray } from '@nativescript/core';
+import * as appModule from '@nativescript/core/application';
 
 export class ReservationsViewModel extends Observable {
 

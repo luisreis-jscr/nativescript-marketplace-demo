@@ -1,9 +1,7 @@
-import * as application from "tns-core-modules/application";
-import * as utils from "tns-core-modules/utils/utils";
-import * as dialogs from "tns-core-modules/ui/dialogs";
-import { isAndroid, isIOS } from "tns-core-modules/platform";
-import * as settings from "tns-core-modules/application-settings";
-import { Observable } from "tns-core-modules/data/observable";
+import * as application from '@nativescript/core/application';
+import * as utils from "@nativescript/core/utils";
+import { isAndroid, isIOS, Observable } from '@nativescript/core';
+import * as settings from '@nativescript/core/application-settings';
 import * as navigator from "../common/navigator";
 
 const enabled = true;
@@ -144,7 +142,7 @@ export function init() {
         return;
     }
 
-    firebase = require("nativescript-plugin-firebase");
+    firebase = require("@nativescript/firebase");
     var userGrantedPush = settings.getBoolean("user-granted-push", false);
     if (isAndroid) {
         // Android doesn't ask permissions so go for firebase initialization on launch.
