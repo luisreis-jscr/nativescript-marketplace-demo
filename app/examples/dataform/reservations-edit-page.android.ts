@@ -1,5 +1,5 @@
 import { ReservationsViewModel } from "./reservations-view-model";
-import { EventData, NavigatedData, Page, Color } from '@nativescript/core';
+import { EventData, NavigatedData, Page, Color, getViewById } from '@nativescript/core';
 import * as viewModule from '@nativescript/core/ui/core/view';
 import * as navigator from "../../common/navigator";
 import * as dataFormModule from "nativescript-ui-dataform";
@@ -22,7 +22,7 @@ export function pageNavigatedTo(args: NavigatedData) {
 
 export function saveChanges(args: EventData) {
     var page = <Page>(<viewModule.View>args.object).page;
-    var dataForm = <dataFormModule.RadDataForm>viewModule.getViewById(page, "reservationForm");
+    var dataForm = <dataFormModule.RadDataForm>getViewById(page, "reservationForm");
     dataForm.commitAll();
 
     if (dataForm.hasValidationErrors()) {

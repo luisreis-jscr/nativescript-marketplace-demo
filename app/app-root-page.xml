@@ -25,10 +25,10 @@
 
                     <GridLayout class="drawer-news-link" 
                         tap="tapWhatIsNew" 
-                        visibility="{{ firebase.hasUnreadNews, (firebase && firebase.hasUnreadNews) ? 'visible' : 'collapse' }}">
+                        visibility="{{ firebase.hasUnreadNews, (firebase &amp;&amp; firebase.hasUnreadNews) ? 'visible' : 'collapse' }}">
                         <GridLayout class="drawer-news-icon">
                             <Image src="res://ic_notification" 
-                                opacity="{{ firebase.hasUnreadNews, (firebase && firebase.hasUnreadNews) ? 1 : 0 }}" 
+                                opacity="{{ firebase.hasUnreadNews, (firebase &amp;&amp; firebase.hasUnreadNews) ? 1 : 0 }}" 
                                 width="10" 
                                 height="10" 
                                 horizontalAlignment="left" />

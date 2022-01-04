@@ -1,11 +1,13 @@
 /// <reference path="./node_modules/@nativescript/types/index.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-core/ios.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-core/android.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-dataform/ios.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-sidedrawer/ios.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-chart/android.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-autocomplete/android.d.ts" />
-/// <reference path="./node_modules/nativescript-ui-autocomplete/ios.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-core/index.ios.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-core/index.android.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-dataform/index.ios.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-sidedrawer/index.ios.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-chart/index.android.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-autocomplete/index.android.d.ts" />
+/// <reference path="./node_modules/nativescript-ui-autocomplete/index.ios.d.ts" />
+/// <reference path="./app/typings/highlightjs.d.ts" />
+/// <reference path="./app/typings/telerik.d.ts" />
 
 declare namespace JSX {
     interface ElementAttributesProperty {

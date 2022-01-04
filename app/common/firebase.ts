@@ -134,7 +134,6 @@ export class ViewModel extends Observable {
 }
 export const viewModel = new ViewModel();
 
-var firebase;
 var lastHandledData;
 
 export function init() {
@@ -142,7 +141,6 @@ export function init() {
         return;
     }
 
-    firebase = require("@nativescript/firebase");
     var userGrantedPush = settings.getBoolean("user-granted-push", false);
     if (isAndroid) {
         // Android doesn't ask permissions so go for firebase initialization on launch.
@@ -171,8 +169,7 @@ function firebaseInit() {
         return;
     }
 
-    console.log("Firebase init!!!");
-
+    const {firebase} = require("@nativescript/firebase");
     firebase.init({
         persist: true
     }).then(value => {

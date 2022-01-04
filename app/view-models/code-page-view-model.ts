@@ -1,4 +1,3 @@
-/// <reference path="../typings/highlightjs.d.ts" />
 import { Observable } from '@nativescript/core';
 import * as fs from '@nativescript/core/file-system';
 
